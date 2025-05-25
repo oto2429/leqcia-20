@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-emplate {
+    grid-template-areas:
+        "header header header"
+        "section section section "
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    padding: 35px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loggo {
+    width: 100px;
+    height: 100px;
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+}
+
+nav a {
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    padding: 80px;
+
+}
+
+.poto {
+    width: 500px;
+    height: 500px;
+}
+
+section p {
+
+    width: 550px;
+    background-color: gray;
+    padding: 25px;
+
+}
+
+footer {
+    
+    grid-area: footer;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    gap: 190px;
+
+}
+footer img{
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+}
